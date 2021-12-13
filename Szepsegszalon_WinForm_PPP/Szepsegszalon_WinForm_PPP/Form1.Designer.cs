@@ -78,14 +78,14 @@ namespace Szepsegszalon_WinForm_PPP
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1042, 516);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1153, 498);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(964, 3);
+            this.button1.Location = new System.Drawing.Point(1075, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -94,7 +94,10 @@ namespace Szepsegszalon_WinForm_PPP
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kezelésMegnevezéseDataGridViewTextBoxColumn,
@@ -109,11 +112,15 @@ namespace Szepsegszalon_WinForm_PPP
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 3);
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(935, 510);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1046, 492);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // kezelésMegnevezéseDataGridViewTextBoxColumn
             // 
@@ -121,7 +128,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.kezelésMegnevezéseDataGridViewTextBoxColumn.HeaderText = "Kezelés megnevezése";
             this.kezelésMegnevezéseDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kezelésMegnevezéseDataGridViewTextBoxColumn.Name = "kezelésMegnevezéseDataGridViewTextBoxColumn";
-            this.kezelésMegnevezéseDataGridViewTextBoxColumn.Width = 125;
+            this.kezelésMegnevezéseDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // alkalmazottNeveDataGridViewTextBoxColumn
             // 
@@ -129,7 +136,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.alkalmazottNeveDataGridViewTextBoxColumn.HeaderText = "Alkalmazott neve";
             this.alkalmazottNeveDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.alkalmazottNeveDataGridViewTextBoxColumn.Name = "alkalmazottNeveDataGridViewTextBoxColumn";
-            this.alkalmazottNeveDataGridViewTextBoxColumn.Width = 125;
+            this.alkalmazottNeveDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // alkalmazottTelefonszámaDataGridViewTextBoxColumn
             // 
@@ -137,7 +144,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.alkalmazottTelefonszámaDataGridViewTextBoxColumn.HeaderText = "Alkalmazott telefonszáma";
             this.alkalmazottTelefonszámaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.alkalmazottTelefonszámaDataGridViewTextBoxColumn.Name = "alkalmazottTelefonszámaDataGridViewTextBoxColumn";
-            this.alkalmazottTelefonszámaDataGridViewTextBoxColumn.Width = 125;
+            this.alkalmazottTelefonszámaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // alkalmazottSzakmájaDataGridViewTextBoxColumn
             // 
@@ -145,7 +152,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.alkalmazottSzakmájaDataGridViewTextBoxColumn.HeaderText = "Alkalmazott szakmája";
             this.alkalmazottSzakmájaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.alkalmazottSzakmájaDataGridViewTextBoxColumn.Name = "alkalmazottSzakmájaDataGridViewTextBoxColumn";
-            this.alkalmazottSzakmájaDataGridViewTextBoxColumn.Width = 125;
+            this.alkalmazottSzakmájaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kezeltVendégNeveDataGridViewTextBoxColumn
             // 
@@ -153,7 +160,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.kezeltVendégNeveDataGridViewTextBoxColumn.HeaderText = "Kezelt vendég neve";
             this.kezeltVendégNeveDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kezeltVendégNeveDataGridViewTextBoxColumn.Name = "kezeltVendégNeveDataGridViewTextBoxColumn";
-            this.kezeltVendégNeveDataGridViewTextBoxColumn.Width = 125;
+            this.kezeltVendégNeveDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kezeltVendégTelefonszámaDataGridViewTextBoxColumn
             // 
@@ -161,7 +168,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.kezeltVendégTelefonszámaDataGridViewTextBoxColumn.HeaderText = "Kezelt vendég telefonszáma";
             this.kezeltVendégTelefonszámaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kezeltVendégTelefonszámaDataGridViewTextBoxColumn.Name = "kezeltVendégTelefonszámaDataGridViewTextBoxColumn";
-            this.kezeltVendégTelefonszámaDataGridViewTextBoxColumn.Width = 125;
+            this.kezeltVendégTelefonszámaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kezelésIdőpontjaDataGridViewTextBoxColumn
             // 
@@ -169,7 +176,7 @@ namespace Szepsegszalon_WinForm_PPP
             this.kezelésIdőpontjaDataGridViewTextBoxColumn.HeaderText = "Kezelés időpontja";
             this.kezelésIdőpontjaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kezelésIdőpontjaDataGridViewTextBoxColumn.Name = "kezelésIdőpontjaDataGridViewTextBoxColumn";
-            this.kezelésIdőpontjaDataGridViewTextBoxColumn.Width = 125;
+            this.kezelésIdőpontjaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // kezelésÁraDataGridViewTextBoxColumn
             // 
@@ -177,13 +184,13 @@ namespace Szepsegszalon_WinForm_PPP
             this.kezelésÁraDataGridViewTextBoxColumn.HeaderText = "Kezelés ára";
             this.kezelésÁraDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kezelésÁraDataGridViewTextBoxColumn.Name = "kezelésÁraDataGridViewTextBoxColumn";
-            this.kezelésÁraDataGridViewTextBoxColumn.Width = 125;
+            this.kezelésÁraDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 516);
+            this.ClientSize = new System.Drawing.Size(1153, 498);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";

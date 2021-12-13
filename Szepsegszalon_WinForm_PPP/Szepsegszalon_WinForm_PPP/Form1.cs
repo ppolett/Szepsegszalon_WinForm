@@ -23,5 +23,10 @@ namespace Szepsegszalon_WinForm_PPP
             this.allDataTableAdapter.Fill(this.szepsegszalonDataSet.AllData);
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
