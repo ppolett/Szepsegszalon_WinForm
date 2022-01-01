@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\bin\Debug\Szepsegszalon_WinForm.exe.config
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\bin\Debug\Szepsegszalon_WinForm.exe
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\bin\Debug\Szepsegszalon_WinForm.pdb
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.Form1.resources
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.Properties.Resources.resources
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.exe
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.pdb
+C:\Users\User\source\repos\Szepsegszalon_WinForm\Szepsegszalon_WinForm\obj\Debug\Szepsegszalon_WinForm.Form2.resources
